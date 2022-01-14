@@ -7,7 +7,6 @@ import time
 EMAIL = ''
 PASSWORD = ''
 SMTP_HOST = ''
-CHROME_DRIVER = ''
 SPEEDTEST_SITE = 'https://www.speedtest.net/'
 MINIMUM_DOWNLOAD_SPEED = 100
 MINIMUM_UPLOAD_SPEED = 10
@@ -70,6 +69,6 @@ class InternetSpeedTestBot:
 
 
 if __name__ == '__main__':
-    chrome_driver = Service(CHROME_DRIVER)
+    chrome_driver = Service('')
     my_bot = InternetSpeedTestBot(chrome_driver)
     my_bot.send_email()
